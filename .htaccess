@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteRule    ^([A-Za-z0-9-]+)/ad$        							$1.php?act=ad    			[NC,L]
+RewriteRule    ^([A-Za-z0-9-]+)/edit/([0-9]+)?$        			    $1.php?act=edit&num=$2    	[NC,L]
+RewriteRule    ^([A-Za-z0-9-]+)/gallery/([0-9]+)?$        			$1.php?act=gallery&tp=$2    	[NC,L]
+RewriteRule    ^([A-Za-z0-9-]+)/([0-9]+)/?$    						$1.php?act=view&num=$2    	[NC,L]
+RewriteRule    ^([A-Za-z0-9-]+)/print/([0-9]+)?$   					$1.php?act=print&num=$2    [NC,L]
+RewriteRule    ^logout$                       						login.php?act=logout    	[NC,L] 
+RewriteRule    ^([A-Za-z0-9-]+)$                      				$1.php    [NC,L]
+RewriteRule    ^tabelas/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$        	tabelas.php?tp=$1&act=$2    [NC,L]
+RewriteRule    ^tabelas/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([0-9]+)$  tabelas.php?tp=$1&act=$2&num=$3    [NC,L]
+RewriteRule    ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$        			$1/$2.php    [NC,L]

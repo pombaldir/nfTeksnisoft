@@ -1,0 +1,33 @@
+/* POMBALDIR.COM SERVIÇOS INTERNET, LDA. */
+
+
+.btnDelete, .btnEdit{
+	margin:0!important;
+	
+}
+
+ul.pagination{
+	margin:0!important;	
+}  
+
+#signin:target~.login_wrapper .login_form,
+#forgot:target~.login_wrapper .registration_form {
+    z-index: 22;
+    animation-name: fadeInLeft;
+    animation-delay: .1s
+}
+
+#signin:target~.login_wrapper .registration_form,
+#forgot:target~.login_wrapper .login_form {
+    animation-name: fadeOutLeft
+}
+ 
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
